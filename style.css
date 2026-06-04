@@ -1,11 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
-  background:#f4f4f4;
-  text-align:center;
   font-family:Arial;
 }
 
-h1{
-  color:darkgreen;
-  margin-top:100px;
-  font-size:50px;
+/* NAVBAR */
+
+nav{
+
+  background:darkgreen;
+
+  color:white;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:20px 50px;
+
+}
+
+nav ul{
+
+  display:flex;
+
+  gap:20px;
+
+  list-style:none;
+
+}
+
+/* HERO SECTION */
+
+.hero{
+
+  height:90vh;
+
+  background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+
+  background-size:cover;
+
+  background-position:center;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+.overlay{
+
+  background:rgba(0,0,0,0.5);
+
+  color:white;
+
+  text-align:center;
+
+  padding:40px;
+
+  border-radius:10px;
+
+}
+
+.overlay h2{
+
+  font-size:60px;
+
+  margin-bottom:20px;
+
+}
+
+.overlay p{
+
+  font-size:24px;
+
+  margin-bottom:20px;
+
+}
+
+.overlay button{
+
+  padding:15px 30px;
+
+  border:none;
+
+  background:orange;
+
+  color:white;
+
+  font-size:18px;
+
+  border-radius:5px;
+
+  cursor:pointer;
+
 }
