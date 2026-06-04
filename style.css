@@ -6,81 +6,54 @@
 
 body{
   font-family:Arial, sans-serif;
+  background:#f4f4f4;
   overflow-x:hidden;
 }
 
 /* NAVBAR */
 
 nav{
-
   position:fixed;
-
-  width:100%;
-
   top:0;
-
-  left:0;
-
-  z-index:1000;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  align-items:center;
-
+  width:100%;
   padding:20px 60px;
 
-  background:rgba(0,0,0,0.3);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:rgba(0,0,0,0.4);
 
   backdrop-filter:blur(10px);
 
+  z-index:1000;
 }
 
-nav h1{
-
+.logo{
   color:white;
-
-  font-size:32px;
-
+  font-size:28px;
   letter-spacing:2px;
-
 }
 
 nav ul{
-
   display:flex;
-
-  gap:30px;
-
   list-style:none;
-
+  gap:25px;
 }
 
 nav li{
-
   color:white;
-
-  font-size:18px;
-
   cursor:pointer;
-
   transition:0.3s;
-
 }
 
 nav li:hover{
-
-  color:#ffb703;
-
-  transform:scale(1.1);
-
+  color:#ffcc70;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
-
   height:100vh;
 
   background:
@@ -92,80 +65,47 @@ nav li:hover{
   url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1400');
 
   background-size:cover;
-
   background-position:center;
 
   display:flex;
-
   justify-content:center;
-
   align-items:center;
 
   text-align:center;
-
-  padding:20px;
-
 }
 
-/* GLASS EFFECT BOX */
-
 .overlay{
-
   background:rgba(255,255,255,0.1);
-
-  backdrop-filter:blur(12px);
-
-  border:1px solid rgba(255,255,255,0.2);
 
   padding:60px;
 
   border-radius:20px;
 
+  backdrop-filter:blur(12px);
+
   color:white;
 
-  max-width:800px;
-
   animation:fadeIn 2s ease;
-
 }
 
-/* TITLE */
-
 .overlay h2{
-
   font-size:70px;
 
   margin-bottom:20px;
 
-  line-height:1.2;
-
-  background:linear-gradient(to right,#ffffff,#ffdd95);
+  background:linear-gradient(to right,#ffffff,#ffe082);
 
   -webkit-background-clip:text;
-
   -webkit-text-fill-color:transparent;
-
 }
-
-/* SUBTITLE */
 
 .overlay p{
-
   font-size:24px;
-
   margin-bottom:30px;
-
-  line-height:1.8;
-
-  color:#f1f1f1;
-
 }
 
-/* BUTTON */
-
 .overlay button{
-
-  padding:16px 35px;
+  padding:15px 35px;
 
   border:none;
 
@@ -184,17 +124,153 @@ nav li:hover{
   cursor:pointer;
 
   transition:0.4s;
-
-  box-shadow:0 10px 20px rgba(0,0,0,0.3);
-
 }
 
 .overlay button:hover{
+  transform:scale(1.05);
+}
 
-  transform:translateY(-5px);
+/* ABOUT */
 
-  box-shadow:0 15px 25px rgba(0,0,0,0.4);
+.about{
+  padding:100px 50px;
+  text-align:center;
+  background:white;
+}
 
+.about h2{
+  font-size:42px;
+  margin-bottom:20px;
+  color:darkgreen;
+}
+
+.about p{
+  max-width:800px;
+  margin:auto;
+  font-size:20px;
+  line-height:1.8;
+}
+
+/* PACKAGES */
+
+.packages{
+  padding:100px 50px;
+  background:#f4f4f4;
+  text-align:center;
+}
+
+.packages h2{
+  font-size:42px;
+  margin-bottom:50px;
+  color:darkgreen;
+}
+
+.package-container{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:320px;
+
+  background:white;
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin:20px 0 10px;
+}
+
+.card p{
+  padding:0 20px 30px;
+}
+
+/* GALLERY */
+
+.gallery{
+  padding:100px 50px;
+  background:white;
+  text-align:center;
+}
+
+.gallery h2{
+  font-size:42px;
+  margin-bottom:50px;
+  color:darkgreen;
+}
+
+.gallery-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.gallery-container img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:20px;
+  transition:0.4s;
+}
+
+.gallery-container img:hover{
+  transform:scale(1.03);
+}
+
+/* CONTACT */
+
+.contact{
+  padding:100px 50px;
+
+  text-align:center;
+
+  background:
+  linear-gradient(
+    to right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+
+  color:white;
+}
+
+.contact h2{
+  font-size:42px;
+  margin-bottom:30px;
+}
+
+.contact p{
+  margin:15px 0;
+  font-size:22px;
+}
+
+/* FOOTER */
+
+footer{
+  background:black;
+  color:white;
+  text-align:center;
+  padding:20px;
 }
 
 /* ANIMATION */
@@ -218,26 +294,14 @@ nav li:hover{
 @media(max-width:768px){
 
   nav{
-
     flex-direction:column;
-
     gap:20px;
-
     padding:20px;
-
-  }
-
-  nav h1{
-    font-size:24px;
-    text-align:center;
   }
 
   nav ul{
-    gap:15px;
-  }
-
-  .overlay{
-    padding:30px;
+    flex-direction:column;
+    text-align:center;
   }
 
   .overlay h2{
@@ -246,6 +310,10 @@ nav li:hover{
 
   .overlay p{
     font-size:18px;
+  }
+
+  .overlay{
+    padding:30px;
   }
 
 }
