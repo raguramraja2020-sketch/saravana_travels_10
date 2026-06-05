@@ -626,3 +626,93 @@ footer{
 }
 ```
 
+
+
+```css id="r5q9xz"
+
+/* ATTRACTIVE FOOTER */
+
+.footer{
+
+  background:
+  linear-gradient(
+    to right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+
+  color:white;
+
+  padding:70px 50px 20px;
+}
+
+.footer-container{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  flex-wrap:wrap;
+
+  gap:50px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+
+  flex:1;
+
+  min-width:250px;
+}
+
+.footer h3{
+
+  color:#ffcc70;
+
+  margin-bottom:20px;
+
+  font-size:28px;
+}
+
+.footer p{
+
+  line-height:2;
+
+  font-size:18px;
+
+  color:#f4f4f4;
+}
+
+.footer a{
+
+  color:white;
+
+  text-decoration:none;
+
+  transition:0.3s;
+}
+
+.footer a:hover{
+
+  color:#ffcc70;
+}
+
+.footer-bottom{
+
+  border-top:1px solid rgba(255,255,255,0.2);
+
+  margin-top:40px;
+
+  padding-top:20px;
+
+  text-align:center;
+
+  font-size:18px;
+
+  color:#f4f4f4;
+}
+```
+
+
