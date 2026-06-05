@@ -43,6 +43,8 @@ nav{
   color:white;
 
   font-size:28px;
+
+  letter-spacing:2px;
 }
 
 nav ul{
@@ -335,6 +337,20 @@ nav a:hover{
   margin:15px 0;
 
   font-size:22px;
+}
+
+.contact a{
+
+  color:#ffcc70;
+
+  text-decoration:none;
+
+  font-weight:bold;
+}
+
+.contact a:hover{
+
+  color:white;
 }
 
 /* FOOTER */
