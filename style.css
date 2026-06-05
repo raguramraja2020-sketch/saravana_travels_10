@@ -554,31 +554,75 @@ footer{
 
   background:black;
 }
-.developer{
+```css id="6h2smb"
+.footer{
 
-  padding:60px 20px;
+  background:#101c08;
 
-  background:#f4f4f4;
+  color:white;
 
-  text-align:center;
+  padding:70px 50px 20px;
 }
 
-.developer h2{
+.footer-container{
 
-  font-size:32px;
+  display:flex;
 
-  margin-bottom:15px;
+  justify-content:space-between;
 
-  color:darkgreen;
+  flex-wrap:wrap;
+
+  gap:50px;
 }
 
-.developer p{
+.footer-left,
+.footer-center,
+.footer-right{
+
+  flex:1;
+
+  min-width:250px;
+}
+
+.footer h3{
+
+  color:#7CFC00;
+
+  margin-bottom:20px;
 
   font-size:28px;
-
-  font-weight:bold;
-
-  letter-spacing:2px;
-
-  color:#ff9800;
 }
+
+.footer p{
+
+  line-height:2;
+
+  font-size:18px;
+}
+
+.footer a{
+
+  color:white;
+
+  text-decoration:none;
+}
+
+.footer a:hover{
+
+  color:#7CFC00;
+}
+
+.footer-bottom{
+
+  border-top:1px solid rgba(255,255,255,0.2);
+
+  margin-top:40px;
+
+  padding-top:20px;
+
+  text-align:center;
+
+  font-size:18px;
+}
+```
+
