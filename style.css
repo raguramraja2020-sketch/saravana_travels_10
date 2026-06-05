@@ -253,9 +253,64 @@ nav a:hover{
   margin:20px 0 10px;
 }
 
+.card h3 a{
+
+  text-decoration:none;
+
+  color:black;
+}
+
+.card h3 a:hover{
+
+  color:darkgreen;
+}
+
 .card p{
 
   padding:0 20px 30px;
+}
+
+/* DETAILS */
+
+.details{
+
+  padding:100px 50px;
+
+  background:white;
+}
+
+.detail-box{
+
+  background:#f4f4f4;
+
+  padding:40px;
+
+  margin-bottom:40px;
+
+  border-radius:20px;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.detail-box h2{
+
+  color:darkgreen;
+
+  margin-bottom:20px;
+}
+
+.detail-box p{
+
+  font-size:20px;
+
+  margin-bottom:20px;
+}
+
+.detail-box li{
+
+  margin:10px 0;
+
+  font-size:18px;
 }
 
 /* GALLERY */
