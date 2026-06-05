@@ -1,82 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-<head>
+body{
+  font-family:Arial, sans-serif;
+  overflow-x:hidden;
+}
 
-  <meta charset="UTF-8">
+/* NAVBAR */
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+nav{
 
-  <title>Saravana Travels Valparai</title>
+  position:fixed;
 
-  <link rel="stylesheet" href="style.css">
+  top:0;
 
-</head>
+  width:100%;
 
-<body>
+  display:flex;
 
-  <!-- NAVBAR -->
+  justify-content:space-between;
 
-  <nav>
+  align-items:center;
 
-    <h1 class="logo">
-      SARAVANA TRAVELS VALPARAI
-    </h1>
+  padding:20px 60px;
 
-    <ul>
+  background:rgba(0,0,0,0.4);
 
-      <li>Home</li>
+  backdrop-filter:blur(10px);
 
-      <li>About</li>
+  z-index:1000;
+}
 
-      <li>Packages</li>
+.logo{
 
-      <li>Gallery</li>
+  color:white;
 
-      <li>Contact</li>
+  font-size:28px;
 
-    </ul>
+  letter-spacing:2px;
+}
 
-  </nav>
+nav ul{
 
-  <!-- HERO SECTION -->
+  display:flex;
 
-  <section class="hero">
+  gap:25px;
 
-    <div class="overlay">
+  list-style:none;
+}
 
-      <h2>
-        Explore The Beauty Of Valparai
-      </h2>
+nav li{
 
-      <p>
-        Tea Estates • Athirapally Falls • Deep Forest • Wildlife
-      </p>
+  color:white;
 
-      <button>
-        Explore Now
-      </button>
+  cursor:pointer;
 
-    </div>
+  transition:0.3s;
+}
 
-  </section>
+nav li:hover{
 
-  <!-- ABOUT -->
+  color:#ffcc70;
+}
 
-  <section class="about">
+/* HERO */
 
-    <h2>About Us</h2>
+.hero{
 
-    <p>
+  height:100vh;
 
-      Saravana Travels Valparai provides beautiful
-      tea estate trips, waterfall visits, deep forest rides
-      and unforgettable travel experiences in Valparai.
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),
 
-    </p>
+  url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1400');
 
-  </section>
+  background-size:cover;
 
-</body>
+  background-position:center;
 
-</html>
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+}
+
+.overlay{
+
+  background:rgba(255,255,255,0.1);
+
+  padding:60px;
+
+  border-radius:20px;
+
+  backdrop-filter:blur(12px);
+
+  color:white;
+}
+
+.overlay h2{
+
+  font-size:70px;
+
+  margin-bottom:20px;
+
+  background:linear-gradient(
+    to right,
+    #ffffff,
+    #ffe082
+  );
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+}
+
+.overlay p{
+
+  font-size:24px;
+
+  margin-bottom:30px;
+}
+
+.overlay button{
+
+  padding:15px 35px;
+
+  border:none;
+
+  border-radius:50px;
+
+  background:linear-gradient(
+    to right,
+    #ff9800,
+    #ffb703
+  );
+
+  color:white;
+
+  font-size:18px;
+
+  cursor:pointer;
+
+  transition:0.4s;
+}
+
+.overlay button:hover{
+
+  transform:scale(1.05);
+}
+
+/* ABOUT */
+
+.about{
+
+  padding:100px 50px;
+
+  text-align:center;
+
+  background:white;
+}
+
+.about h2{
+
+  font-size:42px;
+
+  margin-bottom:20px;
+
+  color:darkgreen;
+}
+
+.about p{
+
+  max-width:800px;
+
+  margin:auto;
+
+  font-size:20px;
+
+  line-height:1.8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+  }
+
+  nav ul{
+
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+  .overlay{
+
+    padding:30px;
+  }
+
+  .overlay h2{
+
+    font-size:40px;
+  }
+
+  .overlay p{
+
+    font-size:18px;
+  }
+
+}
