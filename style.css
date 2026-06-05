@@ -554,3 +554,31 @@ footer{
 
   background:black;
 }
+.developer{
+
+  padding:60px 20px;
+
+  background:#f4f4f4;
+
+  text-align:center;
+}
+
+.developer h2{
+
+  font-size:32px;
+
+  margin-bottom:15px;
+
+  color:darkgreen;
+}
+
+.developer p{
+
+  font-size:28px;
+
+  font-weight:bold;
+
+  letter-spacing:2px;
+
+  color:#ff9800;
+}
