@@ -11,7 +11,6 @@ html{
 body{
   font-family:Arial, sans-serif;
   overflow-x:hidden;
-  background:#f4f4f4;
 }
 
 /* NAVBAR */
@@ -34,7 +33,7 @@ nav{
 
   background:rgba(0,0,0,0.3);
 
-  backdrop-filter:blur(12px);
+  backdrop-filter:blur(10px);
 
   z-index:1000;
 }
@@ -71,8 +70,6 @@ nav a{
 nav a:hover{
 
   color:#ffcc70;
-
-  transform:scale(1.1);
 }
 
 /* HERO */
@@ -106,8 +103,6 @@ nav a:hover{
 
   background:rgba(255,255,255,0.1);
 
-  border:1px solid rgba(255,255,255,0.2);
-
   backdrop-filter:blur(15px);
 
   padding:70px;
@@ -115,8 +110,6 @@ nav a:hover{
   border-radius:25px;
 
   color:white;
-
-  animation:fadeIn 2s ease;
 }
 
 .overlay h2{
@@ -142,8 +135,6 @@ nav a:hover{
   font-size:24px;
 
   margin-bottom:30px;
-
-  line-height:1.8;
 }
 
 .overlay button{
@@ -166,15 +157,6 @@ nav a:hover{
   font-size:18px;
 
   cursor:pointer;
-
-  transition:0.4s;
-
-  box-shadow:0 10px 20px rgba(0,0,0,0.3);
-}
-
-.overlay button:hover{
-
-  transform:translateY(-5px);
 }
 
 /* ABOUT */
@@ -256,7 +238,7 @@ nav a:hover{
 
 .card:hover{
 
-  transform:translateY(-12px);
+  transform:translateY(-10px);
 }
 
 .card img{
@@ -292,8 +274,6 @@ nav a:hover{
   padding:0 25px 35px;
 
   font-size:18px;
-
-  line-height:1.6;
 }
 
 /* GALLERY */
@@ -382,13 +362,6 @@ nav a:hover{
   color:#ffd166;
 
   text-decoration:none;
-
-  font-weight:bold;
-}
-
-.contact a:hover{
-
-  color:white;
 }
 
 /* FOOTER */
@@ -402,91 +375,6 @@ footer{
   text-align:center;
 
   padding:25px;
-}
-
-/* DETAILS PAGE */
-
-.details-page{
-
-  padding:140px 40px;
-
-  text-align:center;
-}
-
-.details-page h1{
-
-  font-size:60px;
-
-  margin-bottom:35px;
-
-  color:darkgreen;
-}
-
-.details-page img{
-
-  width:85%;
-
-  max-width:850px;
-
-  border-radius:25px;
-
-  margin-bottom:35px;
-
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-.details-page p{
-
-  font-size:24px;
-
-  margin-bottom:30px;
-
-  line-height:1.8;
-}
-
-.details-page ul{
-
-  list-style:none;
-
-  margin-bottom:35px;
-}
-
-.details-page li{
-
-  margin:15px 0;
-
-  font-size:22px;
-}
-
-.details-page a{
-
-  text-decoration:none;
-
-  background:darkgreen;
-
-  color:white;
-
-  padding:15px 35px;
-
-  border-radius:12px;
-
-  font-size:18px;
-}
-
-/* ANIMATION */
-
-@keyframes fadeIn{
-
-  from{
-    opacity:0;
-    transform:translateY(50px);
-  }
-
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-
 }
 
 /* MOBILE */
@@ -522,14 +410,6 @@ footer{
   .overlay p{
 
     font-size:18px;
-  }
-
-  .about,
-  .packages,
-  .gallery,
-  .contact{
-
-    padding:90px 25px;
   }
 
 }
